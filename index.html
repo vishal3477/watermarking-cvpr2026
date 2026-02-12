@@ -35,10 +35,23 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #111827, #1f2937);
-    color: white;
-    padding: 80px 20px;
+    position: relative;
+    background: url("assets/cover.png") center/cover no-repeat;
+    padding: 140px 20px;
     text-align: center;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 20, 40, 0.75);
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
 }
 
 .hero img {
