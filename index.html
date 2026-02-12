@@ -8,6 +8,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
+.logo-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.logo-bar img {
+    height: 40px;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.logo-bar img:hover {
+    opacity: 1;
+}
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -109,11 +129,20 @@ a:hover {
 <body>
 
 <div class="hero">
-    <img src="assets/cvpr_logo.png" alt="CVPR 2026 Logo">
+
+    <div class="logo-bar">
+        <img src="assets/adobe.png" alt="Adobe">
+        <img src="assets/meta.png" alt="Meta">
+        <img src="assets/siena.png" alt="University of Siena">
+        <img src="assets/umd.png" alt="University of Maryland">
+        <img src="assets/cvpr_logo.png" alt="CVPR 2026">
+    </div>
+
     <h1>Foundations and Frontiers of Watermarking</h1>
     <h2>Algorithms · Multimodal Extensions · Benchmarks · Authenticity Frameworks</h2>
     <p>CVPR 2026 Tutorial · Half-Day · In Person</p>
 </div>
+
 
 <div class="container">
 
