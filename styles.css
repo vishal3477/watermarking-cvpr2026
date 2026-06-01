@@ -612,6 +612,13 @@ a.btn:hover { border-bottom: 1px solid transparent; }
     color: var(--fg);
 }
 
+.venue-note {
+    max-width: var(--max-w);
+    margin: 24px auto 0;
+    color: var(--fg-muted);
+    font-size: 1rem;
+}
+
 /* -----  CONTACT  ----- */
 
 .contact-card {
